@@ -1,9 +1,10 @@
-  version: '3.8'
+version: '3.8'
   
-  secrets:
-    portainer_admin_password:
-      file: ./secrets/portainer_admin_password.secret
-  
+secrets:
+  portainer_admin_password:
+    file: ./secrets/portainer_admin_password.secret
+
+services:
   # Portainer - WebUI for Containers
   portainer:
     container_name: portainer
