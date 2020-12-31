@@ -16,3 +16,7 @@ sudo chown -R root:root secrets/
 ```
 sudo docker-compose up -d
 ```
+##### Login (username: admin), pass:
+```
+cat secrets/portainer_admin_password.secret
+```
