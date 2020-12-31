@@ -1,12 +1,21 @@
+  version: '3.8'
+  
+  secrets:
+    portainer_admin_password:
+      file: ./secrets/portainer_admin_password.secret
+  
   # Portainer - WebUI for Containers
   portainer:
     container_name: portainer
     image: portainer/portainer-ce:latest
-    command: -H unix:///var/run/docker.sock
-#    command: --admin-password '$$2y$$05$$ZBq/6oanDzs3iwkhQCxF2uKoJsGXA0SI4jdu1PkFrnsKfpCH5Ae4G'
+    command: --admin-password-file /run/secrets/portainer_admin_password -H unix:///var/run/docker.sock
     restart: always
     security_opt:
       - no-new-privileges:true
+
+    secrets:
+      - portainer_admin_password
+
     ports:
       - $PORTAINERPORT:9000
     environment:
@@ -14,7 +23,8 @@
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./portainer:/data
+      - ./portainer-data:/data
+
 #    labels:
 #      - "traefik.enable=true"
 #      ## HTTP Routers
