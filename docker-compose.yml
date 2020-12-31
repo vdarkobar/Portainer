@@ -3,6 +3,7 @@
     container_name: portainer
     image: portainer/portainer-ce:latest
     command: -H unix:///var/run/docker.sock
+#    command: --admin-password '$$2y$$05$$ZBq/6oanDzs3iwkhQCxF2uKoJsGXA0SI4jdu1PkFrnsKfpCH5Ae4G'
     restart: always
     security_opt:
       - no-new-privileges:true
@@ -17,10 +18,11 @@
 #    labels:
 #      - "traefik.enable=true"
 #      ## HTTP Routers
-#      - "traefik.http.routers.portainer-rtr.entrypoints=https"
+#      - "traefik.http.routers.portainer-rtr.entrypoints=websecure"
 #      - "traefik.http.routers.portainer-rtr.rule=Host(`portainer.$DOMAINNAME`)"
 #      ## Middlewares
-#      - "traefik.http.routers.portainer-rtr.middlewares=secure-chain@file"
+#      - "traefik.http.routers.portainer-rtr.middlewares=secure-headers@file"
 #      ## HTTP Services
 #      - "traefik.http.routers.portainer-rtr.service=portainer-svc"
 #      - "traefik.http.services.portainer-svc.loadbalancer.server.port=9000"
+#
