@@ -8,8 +8,9 @@
 ```
 echo -n "Enter directory name: "; read NAME; mkdir -p "$NAME"; cd "$NAME" \
 && git clone https://github.com/vdarkobar/Portainer.git .
-<!-- https://vdarkobar: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@github.com/vdarkobar/Portainer.git . -->
 ```
+<!-- If repo is private then add auth token-->
+<!-- https://vdarkobar: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@github.com/vdarkobar/Portainer.git . -->
   
 ##### Add passwords and change premissions
 ```
