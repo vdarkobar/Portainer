@@ -1,7 +1,12 @@
 # Portainer
   
 <p align="left">
-  <a href="https://github.com/vdarkobar/Home_Lab">Home</a>
+  <a href="https://github.com/vdarkobar/Portainer">Portainer</a> |
+  <a href="https://github.com/vdarkobar/Home_Cloud#small-home-cloud">Home</a> |
+  <a href="https://github.com/vdarkobar/Bitwarden#bitwarden">Bitwarden</a> |
+  <a href="https://github.com/vdarkobar/WordPress#wordpress">WordPress</a> |
+  <a href="https://github.com/vdarkobar/Ghost-blog#ghost-blog">Ghost-blog</a>
+  <br><br>
 </p>  
   
 ### Clone this git repository
