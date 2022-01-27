@@ -30,3 +30,8 @@ sudo docker-compose up -d
 ```
 cat secrets/portainer_admin_password.secret
 ```
+
+<p align="center">
+<a href="https://github.com/vdarkobar/Portainer">top of the page</a>
+</p>
+
