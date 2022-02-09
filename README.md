@@ -30,9 +30,9 @@ sudo docker-compose up -d
 ```
 cat secrets/portainer_admin_password.secret
 ```
-##### Go to: Environments > primary > Public IP, and add local IP address of the VM.
+##### Go to: *Environments > primary > Public IP*, add local IP address of the VM.
   
-#####  Copy of original links, if using cusstom templates (settings page): 
+#####  Copy of original links, if using cusstom templates (*settings page*): 
 ```
 App Templates
 URL > https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json
